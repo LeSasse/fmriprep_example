@@ -1,0 +1,18 @@
+
+executable = /usr/bin/bash
+transfer_executable = False
+initial_dir=../code
+universe = vanilla
+getenv = True
+request_cpus = 1
+request_memory = 5GB
+request_disk = 10GB
+
+
+
+arguments = ./recon_subj.sh sub-101
+log = ../logs/sub-101$(Cluster).$(Process).log
+output = ../logs/sub-101_$(Cluster).$(Process).out
+error = ../logs/sub-101_$(Cluster).$(Process).err
+Queue
+
