@@ -1,0 +1,18 @@
+
+executable = /usr/bin/bash
+transfer_executable = False
+initial_dir=../code
+universe = vanilla
+getenv = True
+request_cpus = 1
+request_memory = 5GB
+request_disk = 10GB
+
+
+
+arguments = ./fmriprep_subj.sh sub-01
+log = ../logs/sub-01$(Cluster).$(Process).log
+output = ../logs/sub-01_$(Cluster).$(Process).out
+error = ../logs/sub-01_$(Cluster).$(Process).err
+Queue
+

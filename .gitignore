@@ -4,6 +4,7 @@ __pycache__/
 *$py.class
 
 fmriprep-21.0.2.simg
+fmriprep
 
 # subject data
 sub-01
