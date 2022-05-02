@@ -23,17 +23,14 @@ FMRIPREP=/data/project/singularity/fmriprep-20.2.0.simg
 #
 # Freesurfer
 #
-echo "Loading Freesurfer!"
-module load freesurfer/7.1
-echo "FREESURFER_HOME=${FREESURFER_HOME}"
 license=/opt/freesurfer/7.1/license.txt
 
 #
 # dataset
 # 
 REPO=https://github.com/OpenNeuroDatasets/ds000102.git
-export INPUT_DIR=$(mktemp -d)
-export DERIVS=${code}/../derivatives
+INPUT_DIR=$(mktemp -d)
+DERIVS=${code}/../derivatives
 WORK_DIR=$(mktemp -d)
 
 echo "INPUT_DIR=${INPUT_DIR}"
